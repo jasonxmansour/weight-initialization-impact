@@ -137,14 +137,3 @@ To test additional initialization methods:
 2. Update the `init_methods` list in `config.yaml`
 3. Run the experiments
 
-## Citation
-
-If you use this code in your research, please cite the original paper:
-
-```
-@article{mansour2025weightinitialization,
-  title={Effects of Weight Initialization Strategies on CNN and Transformer Performance},
-  author={Mansour, Jason},
-  year={2025}
-}
-```
