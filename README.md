@@ -69,18 +69,20 @@ python main.py --evaluate
 
 ```
 project_root/
-├── train_resnet.py        # Trains ResNet-18 on CIFAR-10
-├── train_distilbert.py    # Fine-tunes DistilBERT on IMDB
-├── initialization.py      # Defines initialization functions
-├── evaluate.py            # Evaluates model performance
-├── main.py                # Orchestrates experiments
-├── config.yaml            # Configuration parameters
-├── utils.py               # Utility functions
-└── results/               # Generated during execution
-    ├── resnet/            # ResNet results
-    ├── distilbert/        # DistilBERT results
-    ├── plots/             # Generated plots
-    └── logs/              # Runtime logs
+├── main.py                        # Orchestrates experiments
+├── analysis-ipynb.py              # Analysis and visualization
+├── README.md
+├── configs/
+│   └── config.yaml                # Configuration parameters
+├── init_methods/
+│   └── initialization.py         # Weight initialization functions
+├── models/
+│   ├── train_resnet.py           # Trains ResNet-18 on CIFAR-10
+│   └── train_distilbert.py       # Fine-tunes DistilBERT on IMDB
+├── utils/
+│   ├── evaluate.py               # Evaluates model performance
+│   └── utils.py                  # Data loading, saving, etc.
+
 ```
 
 ## Configuration
