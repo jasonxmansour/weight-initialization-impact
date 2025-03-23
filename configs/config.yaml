@@ -1,0 +1,45 @@
+# General settings
+seed: 42
+init_methods:
+  - xavier
+  - he
+  - lecun
+  - random
+
+# CNN settings
+cnn:
+  model: resnet18
+  dataset: cifar10
+  batch_size: 64
+  learning_rate: 0.001
+  epochs: 10
+  optimizer: adam
+  weight_decay: 1e-4
+  momentum: 0.9
+  data_dir: "./data"
+  results_dir: "./results/resnet"
+  save_model: true
+
+# Transformer settings
+transformer:
+  model: distilbert-base-uncased
+  dataset: imdb
+  batch_size: 8
+  learning_rate: 5e-5
+  epochs: 3
+  optimizer: adamw
+  weight_decay: 1e-2
+  max_length: 512
+  data_dir: "./data"
+  results_dir: "./results/distilbert"
+  save_model: true
+
+# Evaluation settings
+evaluation:
+  test_batch_size: 128
+  metrics:
+    - accuracy
+    - loss
+    - gradient_norm
+  plot_dir: "./results/plots"
+  log_dir: "./results/logs"
